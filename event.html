@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+</head>
+
+<body>
+    <h1>I am learning jQuery.</h1>
+    <p>double click and hide</p>
+    <P id="demo">if you hover me I will disapper</P>
+<h3>This is jQuery and is on () event function </h3>
+    <input type="text" placeholder="enter you name" id="in"><br>
+    <input type="number" placeholder="Enter you age" id="in2"><br>
+    <button>submit</button><br>
+    <script>
+        $("document").ready(function () {
+            $("p:first").click(function () {
+                alert("oh,you click on p")
+            })
+            $("h1").dblclick(function () {
+                $("h1").hide();
+
+            })
+            /*   $("#in").mouseenter(function(){
+                   alert("mouse entered")
+               })
+               $("#in").mouseleave(function(){
+                   alert("mouse leaved")
+               })      
+               $("#in2").mouse(function(){
+                   alert("mouse entered")
+               })  */
+
+            $("#in").focus(function () {
+                $(this).css("background-color", "red")
+            })
+            $("#in").blur(function () {
+                $(this).css("background-color", "blue")
+            })
+
+
+            //ON()ON METHOD
+$("#demo").on("click",function(){
+    $(this).hide();
+})
+  //adding more event on h3 by on()
+$("h3").on({
+    mouseenter: function(){
+      $(this).css("background-color", "lightgray");
+    },
+    mouseleave: function(){
+        $(this).css("background-color","red");
+    },
+    click: function(){
+        $(this).css("background-color","green");
+    },
+
+})
+
+
+        })
+
+    </script>
+</body>
+
+</html>
