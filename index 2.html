@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Div Click Example</title>
+  <!-- Include jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<!-- Three div elements with different IDs and colors -->
+<div id="blue" style="width: 100px; height: 100px; background-color: blue;"></div>
+<div id="yellow" style="width: 100px; height: 100px; background-color: yellow;"></div>
+<div id="red" style="width: 100px; height: 100px; background-color: red;"></div>
+
+<script>
+$(document).ready(function() {
+  // Attach a click event handler to the blue div
+  $("#blue").click(function() {
+    alert("Blue div clicked!");
+  });
+
+  // Attach a click event handler to the yellow div
+  $("#yellow").click(function() {
+    alert("Yellow div clicked!");
+  });
+
+  // Attach a click event handler to the red div
+  $("#red").click(function() {
+    alert("Red div clicked!");
+  });
+});
+</script>
+
+</body>
+</html>
