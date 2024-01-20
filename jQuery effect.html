@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script>
+$("document").ready(function(){
+    $("#hide").click(function(){
+        $("p:first").hide(1000);
+    });
+    $("#show").click(function(){
+        $("P:first").show(2000);
+    });
+    $("#btn").click(function(){
+        $("#p").toggle();
+    });
+});
+    </script>
+</head>
+<body>
+    <p>this is the content will show and the hide</p>
+    <button id="hide">HIDE</button>
+    <button id="show">SHOW</button><br><hr>vdvd
+    <p id="p">this is toggle, once click it hide and again click will be text shown</p>
+    <button id="btn">TOGGLE</button>
+</body>
+</html>
