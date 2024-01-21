@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Event</title>
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+    <style>
+.yui{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+    </style>
+</head>
+<body>
+<div class="yui"></div>
+<h1>hello world!</h1>
+<h2>hello world #</h2>
+<p>hello world 5</p>
+    <script>
+       $("h1").mouseover(function(){
+        $("h1").css("color","red")
+       })
+$("yui").change(function(){
+    $("yui").css("background-color","red")
+})
+    </script>
+</body>
+</html>
